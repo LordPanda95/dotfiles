@@ -1,7 +1,5 @@
 gui:
   nerdFontsVersion: "3"
+  filterMode: "fuzzy"
 os:
-  edit: "nvim {{filename}}"
-  editAtLine: "nvim --line={{line}} {{filename}}"
-  openDirInEditor: "nvim {{dir}}"
-  editInTerminal: true
+  editPreset: "nvim"
