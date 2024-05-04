@@ -13,6 +13,7 @@ set fzf_diff_highlighter delta
 
 source "$HOME/.cargo/env.fish"
 
+set -gx XDG_CONFIG_HOME "$HOME/.config"
 set -gx EDITOR nvim
 set -gx LC_ALL en_US.UTF-8
 set -gx LANG en_EN.UTF-8
