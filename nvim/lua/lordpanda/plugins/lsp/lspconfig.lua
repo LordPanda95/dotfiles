@@ -88,7 +88,7 @@ return {
       ["ansiblels"] = function()
         -- configure ansible-language-server
         lspconfig["ansiblels"].setup({
-          capabilities = capabilities,
+          --capabilities = capabilities,
           filetypes = { "yaml.ansible" },
         })
       end,
@@ -137,20 +137,20 @@ return {
           filetypes = { "xml", "xsd", "xsl", "xslt", "svg" },
         })
       end,
-      ["nginx_language_server"] = function()
-        -- configure ansible-language-server
-        lspconfig["nginx_language_server"].setup({
+      -- ["nginx_language_server"] = function()
+      --   -- configure ansible-language-server
+      --   lspconfig["nginx_language_server"].setup({
+      --     capabilities = capabilities,
+      --     filetypes = { "nginx" },
+      --   })
+      -- end,
+      ["powershell_es"] = function()
+        --configure ansible-language-server
+        lspconfig["powershell_es"].setup({
           capabilities = capabilities,
-          filetypes = { "nginx" },
+          filetypes = { "ps1" },
         })
       end,
-      --["powershell_es"] = function()
-      -- configure ansible-language-server
-      --lspconfig["powershell_es"].setup({
-      --capabilities = capabilities,
-      --filetypes = { "ps1" },
-      --})
-      --end,
       ["pyright"] = function()
         -- configure ansible-language-server
         lspconfig["pyright"].setup({
