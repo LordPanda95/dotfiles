@@ -27,28 +27,28 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        "ansible-language-server", -- ansible
+        "ansiblels", -- ansible
         --"bash-language-server", -- bash
         --"cmake-language-server", -- cmake
         --"css-lsp", -- css/scss/less
         --"eslint-lsp", -- javascript/typescript
-        "docker-compose-language-service", -- docker compose
-        "dockerfile-language-server", -- docker
+        "docker_compose_language_service", -- docker compose
+        "dockerls", -- docker
         "gopls", -- go
         --"grammarly-languageserveri", -- makrdown
         --"groovy-language-server", -- groovy
         --"html-lsp", -- html
-        "jinja-lsp", -- jinja
+        "jinja_lsp", -- jinja
         --"json-lsp",  -- json
         "lemminx", -- xml
-        "lua-language-server", -- lua
-        "nginx-language-server", -- nginx
-        "powershell-editor-services", --powershell
+        "lua_ls", -- lua
+        --"nginx_ls", -- nginx
+        "powershell_es", --powershell
         "pyright", -- python
         "sqls", -- sql
         "taplo", -- toml
         --"terraform-ls", --terraform
-        "yaml-language-server", -- yaml
+        "yamlls", -- yaml
       },
     })
 
@@ -65,7 +65,7 @@ return {
         "black", -- python formatter
         "sql-formatter", -- sql
         -- linters
-        "ansible-lint", -- ansible
+        -- "ansible-lint", -- ansible
         "shellcheck", -- bash
         "cmakelang", -- cmake
         "stylelint", -- css/sccs/less
