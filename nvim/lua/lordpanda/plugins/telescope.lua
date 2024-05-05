@@ -1,23 +1,3 @@
--- NEW !!
-
---local lga_actions = require("telescope-live-grep-args.actions")
--- local builtin = require('telescope.builtin')
--- vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
--- vim.keymap.set('n', '<leader>fw', builtin.live_grep, {})
--- vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
--- -- vim.keymap.set('n', '<Tab>', builtin.buffers, {})
--- vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
--- vim.keymap.set('n', '<leader>gb', builtin.git_branches, {})
--- vim.keymap.set('n', '<leader>gc', builtin.git_commits, {})
--- vim.keymap.set('n', '<leader>gs', builtin.git_status, {})
--- vim.keymap.set('n', '<leader>ls', builtin.lsp_document_symbols, {})
--- vim.keymap.set('n', 'gr', builtin.lsp_references,
---                {noremap = true, silent = true})
--- vim.keymap.set('n', 'gd', builtin.lsp_definitions,
---                {noremap = true, silent = true})
-
-
-
 return {
   "nvim-telescope/telescope.nvim",
   branch = "0.1.x",
@@ -30,6 +10,7 @@ return {
   config = function()
     local telescope = require("telescope")
     local actions = require("telescope.actions")
+    local builtin = require("telescope.builtin")
     local transform_mod = require("telescope.actions.mt").transform_mod
 
     local trouble = require("trouble")
@@ -56,7 +37,7 @@ return {
       },
     })
 
-    telescope.load_extension('fzf')
+    telescope.load_extension("fzf")
 
     -- set keymaps
     local keymap = vim.keymap -- for conciseness
@@ -66,11 +47,11 @@ return {
     keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
     keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
     keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
-    --keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Fuzzy find vim buffers" })
-    --keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "find help tags" })
-    --keymap.set('n', '<leader>gb', builtin.git_branches, { desc = "Find git branches" })
-    --keymap.set('n', '<leader>gc', builtin.git_commits, { desc = "Fuzzy find git commits" })
-    --keymap.set('n', '<leader>gs', builtin.git_status, { desc = "Fuzzy find git status" })
+    keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Fuzzy find vim buffers" })
+    keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "find help tags" })
+    keymap.set("n", "<leader>gb", builtin.git_branches, { desc = "Find git branches" })
+    keymap.set("n", "<leader>gc", builtin.git_commits, { desc = "Fuzzy find git commits" })
+    keymap.set("n", "<leader>gs", builtin.git_status, { desc = "Fuzzy find git status" })
     --keymap.set('n', '<leader>ls', builtin.lsp_document_symbols, { desc = "Fuzzy find files in cwd" })
     -- keymap.set('n', 'gr', builtin.lsp_references,
     --                {noremap = true, silent = true, desc = "Go to references" })
