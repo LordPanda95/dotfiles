@@ -52,7 +52,7 @@ return {
     keymap.set("n", "<leader>gb", builtin.git_branches, { desc = "Find git branches" })
     keymap.set("n", "<leader>gc", builtin.git_commits, { desc = "Fuzzy find git commits" })
     keymap.set("n", "<leader>gs", builtin.git_status, { desc = "Fuzzy find git status" })
-    --keymap.set('n', '<leader>ls', builtin.lsp_document_symbols, { desc = "Fuzzy find files in cwd" })
+    keymap.set("n", "<leader>ls", builtin.lsp_document_symbols, { desc = "Fuzzy find files in cwd" })
     -- keymap.set('n', 'gr', builtin.lsp_references,
     --                {noremap = true, silent = true, desc = "Go to references" })
     -- keymap.set('n', 'gd', builtin.lsp_definitions,
