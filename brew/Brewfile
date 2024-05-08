@@ -1,0 +1,100 @@
+tap "1password/tap"
+tap "hashicorp/tap"
+tap "dracula/install"
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+brew "xz"
+brew "ansible"
+brew "awscli"
+brew "bat"
+brew "dog"
+brew "exa"
+brew "fastfetch"
+brew "fd"
+brew "fish"
+brew "fzf"
+brew "git"
+brew "git-delta"
+brew "git-lfs"
+brew "gitleaks"
+brew "iperf3"
+brew "jaq"
+brew "lazygit"
+brew "mas"
+brew "mtr"
+brew "neovim"
+brew "openssl@1.1"
+brew "ripgrep"
+brew "sd"
+brew "subversion"
+brew "telnet"
+brew "terraform"
+brew "topgrade"
+brew "tmux"
+brew "tty-clock"
+brew "watch"
+brew "wget"
+cask "1password-cli"
+cask "alacritty"
+cask "google-chrome"
+cask "font-fira-code-nerd-font"
+cask "mkvtoolnix"
+cask "raycast"
+cask "stats"
+cask "timemachinestatus"
+cask "slack"
+cask "whatsapp"
+cask "telegram"
+cask "iina"
+cask "transmission"
+cask "xld"
+cask "visual-studio-code"
+cask "skype"
+cask "raspberry-pi-imager"
+cask "ledger-live"
+cask "lark"
+cask "firefox"
+cask "betterdiscord-installer"
+cask "dracula-betterdiscord"
+cask "docker"
+cask "keyclu"
+cask "brave-browser"
+cask "steam"
+cask "setapp"
+cask "1password"
+cask "keka"
+cask "kitty"
+cask "middleclick"
+mas "1Password for Safari", id: 1569813296
+mas "Amphetamine", id: 937984704
+mas "Auto HD FPS for YouTube", id: 1546729687
+mas "Bear", id: 1091189122
+mas "Cityscapes", id: 1631153096
+mas "Disk Speed Test", id: 425264550
+mas "DuckDuckGo Privacy for Safari", id: 1482920575
+mas "FANTASIAN", id: 1517339045
+mas "Flow", id: 1423210932
+mas "FoXray", id: 6448898396
+mas "GRIS+", id: 1617349089
+mas "Hidden Bar", id: 1452453066
+mas "HorizonChase2", id: 1534920947
+mas "Inmost", id: 1465235605
+mas "Keynote", id: 409183694
+mas "LIMBO+", id: 1618201675
+mas "Little Orpheus", id: 1446279575
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Numbers", id: 409203825
+mas "Oceanhorn 2", id: 1460715987
+mas "Pages", id: 409201541
+mas "Screens 5", id: 1663047912
+mas "Shazam", id: 897118787
+mas "Shovel Knight Dig", id: 1538097794
+mas "Spaceland", id: 1471019397
+mas "Speedtest", id: 1153157709
+mas "Stela", id: 1476456353
+mas "The Last Campfire", id: 973039644
+mas "TMNT", id: 1625907876
+mas "Volum", id: 1601814648
+mas "waifu2x", id: 1286485858
+mas "WireGuard", id: 1451685025
+mas "Yaga", id: 1473997515
