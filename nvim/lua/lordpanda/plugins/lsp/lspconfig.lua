@@ -4,10 +4,14 @@ return {
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     { "antosha417/nvim-lsp-file-operations", config = true },
-    -- { "folke/neodev.nvim", opts = {} },
+    "mrded/nvim-lsp-notify",
   },
   config = function()
-    require("lsp_signature").setup()
+    -- require("lsp_signature").setup()
+
+    require("lsp-notify").setup({
+      notify = require("notify"),
+    })
 
     -- import lspconfig plugin
     local lspconfig = require("lspconfig")
