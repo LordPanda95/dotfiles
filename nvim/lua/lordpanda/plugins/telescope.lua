@@ -42,17 +42,17 @@ return {
     -- set keymaps
     local keymap = vim.keymap -- for conciseness
 
-    keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
-    keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
-    keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
-    keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
-    keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
-    keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Fuzzy find vim buffers" })
-    keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "find help tags" })
-    keymap.set("n", "<leader>gb", builtin.git_branches, { desc = "Find git branches" })
-    keymap.set("n", "<leader>gc", builtin.git_commits, { desc = "Fuzzy find git commits" })
-    keymap.set("n", "<leader>gs", builtin.git_status, { desc = "Fuzzy find git status" })
-    keymap.set("n", "<leader>ls", builtin.lsp_document_symbols, { desc = "Fuzzy find files in cwd" })
+    keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" }, {silent = true})
+    keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" }, {silent = true})
+    keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" }, {silent = true})
+    keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" }, {silent = true})
+    keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" }, {silent = true})
+    keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Fuzzy find vim buffers" }, {silent = true})
+    keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "find help tags" }, {silent = true})
+    keymap.set("n", "<leader>gb", builtin.git_branches, { desc = "Find git branches" }, {silent = true})
+    keymap.set("n", "<leader>gc", builtin.git_commits, { desc = "Fuzzy find git commits" }, {silent = true})
+    keymap.set("n", "<leader>gs", builtin.git_status, { desc = "Fuzzy find git status" }, {silent = true})
+    keymap.set("n", "<leader>ls", builtin.lsp_document_symbols, { desc = "Fuzzy find files in cwd" }, {silent = true})
     -- keymap.set('n', 'gr', builtin.lsp_references,
     --                {noremap = true, silent = true, desc = "Go to references" })
     -- keymap.set('n', 'gd', builtin.lsp_definitions,
