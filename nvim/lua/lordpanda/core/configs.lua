@@ -56,7 +56,6 @@ vim.opt.fillchars = {
 -- ANSIBLE/YAML --------------------------------------------------------------
 vim.filetype.add({
   extension = {
-    yml = "yaml.ansible",
     jinja = "jinja",
     jinja2 = "jinja",
     j2 = "jinja",
