@@ -7,7 +7,7 @@ return {
     -- { "folke/neodev.nvim", opts = {} },
   },
   config = function()
-    require "lsp_signature".setup()
+    require("lsp_signature").setup()
 
     -- import lspconfig plugin
     local lspconfig = require("lspconfig")
@@ -94,6 +94,20 @@ return {
           filetypes = { "yaml.ansible" },
         })
       end,
+      ["terraformls"] = function()
+        -- configure ansible-language-server
+        lspconfig["terraformls"].setup({
+          --capabilities = capabilities,
+          filetypes = { "terraform" },
+        })
+      end,
+      ["tflint"] = function()
+        -- configure ansible-language-server
+        lspconfig["tflint"].setup({
+          --capabilities = capabilities,
+          filetypes = { "terraform" },
+        })
+      end,
       ["dockerls"] = function()
         -- configure ansible-language-server
         lspconfig["dockerls"].setup({
@@ -118,7 +132,7 @@ return {
             gopls = {
               analyses = {
                 unsedparam = true,
-                shadow = true
+                shadow = true,
               },
               staticcheck = true,
             },

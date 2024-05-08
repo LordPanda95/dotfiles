@@ -20,7 +20,7 @@ return {
         bash = { "shfmt" },
         sql = { "sql-formatter" },
         python = { "isort", "black" },
-        go = { "gofumpt" }
+        go = { "gofumpt" },
       },
       format_on_save = {
         lsp_fallback = true,

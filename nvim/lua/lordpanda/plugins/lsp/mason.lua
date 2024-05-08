@@ -47,7 +47,7 @@ return {
         "pyright", -- python
         "sqls", -- sql
         "taplo", -- toml
-        --"terraform-ls", --terraform
+        "terraformls", --terraform
         "yamlls", -- yaml
       },
     })
