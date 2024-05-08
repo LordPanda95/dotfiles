@@ -4,9 +4,11 @@ return {
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     { "antosha417/nvim-lsp-file-operations", config = true },
-    { "folke/neodev.nvim", opts = {} },
+    -- { "folke/neodev.nvim", opts = {} },
   },
   config = function()
+    require "lsp_signature".setup()
+
     -- import lspconfig plugin
     local lspconfig = require("lspconfig")
 
@@ -29,8 +31,8 @@ return {
         opts.desc = "Show LSP references"
         keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
 
-        opts.desc = "Go to declaration"
-        keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
+        -- opts.desc = "Go to declaration"
+        -- keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
 
         opts.desc = "Show LSP definitions"
         keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
@@ -116,7 +118,7 @@ return {
             gopls = {
               analyses = {
                 unsedparam = true,
-                --shadow = true
+                shadow = true
               },
               staticcheck = true,
             },
