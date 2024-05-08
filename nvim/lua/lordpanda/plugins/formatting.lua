@@ -6,20 +6,21 @@ return {
 
     conform.setup({
       formatters_by_ft = {
-        javascript = { "prettier" },
-        typescript = { "prettier" },
-        javascriptreact = { "prettier" },
-        typescriptreact = { "prettier" },
-        svelte = { "prettier" },
-        css = { "prettier" },
-        html = { "prettier" },
-        json = { "prettier" },
-        yaml = { "prettier" },
-        markdown = { "prettier" },
-        graphql = { "prettier" },
-        liquid = { "prettier" },
+        javascript = { "prettierdd" },
+        typescript = { "prettierdd" },
+        javascriptreact = { "prettierd" },
+        typescriptreact = { "prettierd" },
+        css = { "prettierd" },
+        html = { "prettierd" },
+        json = { "prettierd" },
+        yaml = { "prettierd" },
+        markdown = { "prettierd" },
+        xml = { "xmlformatter" },
         lua = { "stylua" },
+        bash = { "shfmt" },
+        sql = { "sql-formatter" },
         python = { "isort", "black" },
+        go = { "gofumpt" }
       },
       format_on_save = {
         lsp_fallback = true,
