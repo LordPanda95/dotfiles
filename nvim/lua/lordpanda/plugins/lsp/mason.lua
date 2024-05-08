@@ -65,7 +65,7 @@ return {
         "black", -- python formatter
         "sql-formatter", -- sql
         -- linters
-        -- "ansible-lint", -- ansible
+        "ansible-lint", -- ansible
         "shellcheck", -- bash
         "cmakelang", -- cmake
         "stylelint", -- css/sccs/less
