@@ -59,18 +59,17 @@ return {
         "gofumpt", -- go
         "xmlformatter", -- xml
         "stylua", -- lua
-        "prettierd", -- prettier formatter
-        -- css/html/json/javascript/less/scss/makrdown/yaml
+        "prettierd", -- css/html/json/javascript/less/scss/makrdown/yaml
         "isort", -- python formatter
         "black", -- python formatter
         "sql-formatter", -- sql
+
         -- linters
         "ansible-lint", -- ansible
         "shellcheck", -- bash
-        "cmakelang", -- cmake
-        "stylelint", -- css/sccs/less
+        "cmakelint", -- cmake
         "eslint_d", -- javascript/typescript
-        "golangci-lint", -- go
+        -- "golangci-lint", -- go
         "markdownlint", -- makrdown
         "npm-groovy-lint", --groovy
         "htmlhint", -- html
