@@ -1,10 +1,3 @@
--- NEW !!
-
--- require('nvim_comment').setup({
---     line_mapping = "<leader>cl",
---     operator_mapping = "<leader>c"
--- })
-
 return {
   "numToStr/Comment.nvim",
   event = { "BufReadPre", "BufNewFile" },
