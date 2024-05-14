@@ -8,6 +8,7 @@ alias lt="exa -alg --tree"
 alias c="clear"
 alias colors="$HOME/colors.sh"
 alias vim="nvim"
+alias icat="kitty +kitten icat"
 
 #fzf_configure_bindings --directory=\cf --variables=\e\cv
 #fzf_configure_bindings --
