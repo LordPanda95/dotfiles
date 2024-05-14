@@ -35,7 +35,6 @@ brew "tty-clock"
 brew "watch"
 brew "wget"
 cask "1password-cli"
-cask "alacritty"
 cask "google-chrome"
 cask "font-fira-code-nerd-font"
 cask "mkvtoolnix"
@@ -64,7 +63,6 @@ cask "setapp"
 cask "1password"
 cask "keka"
 cask "kitty"
-cask "middleclick"
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Auto HD FPS for YouTube", id: 1546729687
