@@ -9,6 +9,7 @@ alias c="clear"
 alias colors="$HOME/colors.sh"
 alias vim="nvim"
 alias icat="kitty +kitten icat"
+alias watch="viddy"
 
 #fzf_configure_bindings --directory=\cf --variables=\e\cv
 #fzf_configure_bindings --
