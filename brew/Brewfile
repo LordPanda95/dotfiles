@@ -2,6 +2,7 @@ tap "1password/tap"
 tap "hashicorp/tap"
 tap "dracula/install"
 tap "homebrew/bundle"
+tap "alienator88/cask"
 brew "xz"
 brew "ansible"
 brew "awscli"
@@ -65,6 +66,7 @@ cask "setapp"
 cask "1password"
 cask "keka"
 cask "kitty"
+cask "pearcleaner"
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Auto HD FPS for YouTube", id: 1546729687
